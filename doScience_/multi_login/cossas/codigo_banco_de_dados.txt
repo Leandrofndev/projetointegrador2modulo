@@ -1,0 +1,73 @@
+Abrindo a aba "SHELL" do painel de controle do xampp:
+
+mysql -u root -p
+
+CREATE DATABASE senac;
+
+SHOW DATABASES;
+
+USE senac;
+
+CREATE TABLE tb_usuario (
+idusuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+login VARCHAR(32) NOT NULL,
+senha VARCHAR(16) NOT NULL
+);
+
+SELECT * FROM tb_nomedatabela;
+
+show tables;
+
+DELETE FROM `tabela' WHERE `id_da_primeira_coluna` = `número da id_da_primeira_coluna`;
+
+
+
+UPDATE `table_name` SET `column_name` = `new_value' [WHERE condition];
+
+UPDATE `table_name` is the command that tells MySQL to update the data in a table .
+SET `column_name` = `new_value' are the names and values of the fields to be affected by the update query. Note, when setting the update values, strings data types must be in single quotes. Numeric values do not need to be in quotation marks. Date data type must be in single quotes and in the format 'YYYY-MM-DD'.
+[WHERE condition]  is optional and can be used to put a filter that restricts the number of rows affected by the UPDATE query.
+
+
+
+
+
+ALTER TABLE tb_usuario
+ADD user_type VARCHAR(32) NOT NULL;
+
+ALTER TABLE tb_usuario DROP nome;
+
+
+UPDATE `nome_da_tabela` SET `coluna` = `novo_conteúdo_da_coluna` WHERE `fileira_de_identificação` = `número_da_fileira`;
+
+
+
+
+id = cod_usuario
+email = email
+username = login
+password = senha
+user_type = user_type
+
+
+
+create table tb_login (
+id_login int not null auto_increment primary key,
+email varchar(64) not null,
+senha varchar(64) not null,
+nivel varchar(64) not null);
+
+
+insert into tb_usuario () value();
+insert into tb_login (email, senha, nivel) value("adonis@hotmail.com", "senha" "0");
+insert into tb_login (email, senha, nivel) value("adm@hotmail.com", "senha" "1");
+
+
+
+
+
+
+
+
+
+
