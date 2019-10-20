@@ -1,5 +1,5 @@
 <?php include('functions.php');
-
+/*
 if (!isAdmin()) {
 	$_SESSION['msg'] = "Você precisa logar-se primeiro!!";
 	header('location: login.php');
@@ -9,6 +9,7 @@ if (isset($_GET['logout'])) {
 	unset($_SESSION['user']);
 	header("location: login.php");
 }
+*/
 ?>
 <!DOCTYPE html>
 <html>

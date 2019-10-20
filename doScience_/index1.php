@@ -1,3 +1,5 @@
+<?php include('functions.php')?>    
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,22 +14,20 @@
         <link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/estilo.css">
 		<link rel="stylesheet" href="css/responsive.css">
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-
-    <p style= "color: #1a7ff1d5; width: 100%; text-align: center;   font-size: 80px; margin-top: 80px" >
-        doScience
-    </p>
-
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <p style= "color: #1a7ff1d5; width: 100%; text-align: center;   font-size: 80px; margin-top: 80px" >
+            doScience
+        </p>
 	</head>
 
 	<body>
     <!-- header-img -->
     <div class="container">
-    <section id="banner">
-      <img class="img-responsive" src="images/doScience.png" style="width: 100%;" alt="">
-      <br><br><br><br><br>
-    </section>
+        <section id="banner">
+            <img class="img-responsive" src="images/doScience.png" style="width: 100%;" alt="">
+            <br><br><br><br><br>
+        </section>
     </div>
 
 	<!-- Header -->
@@ -36,33 +36,26 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <nav class="navbar navbar-default bg-primary">
+                        <nav class="navbar navbar-default navbar-fixed-top ">
                           <div class="container-fluid">
                             <!-- Como será mostrado em dispositivos móveis -->
                             <div class="navbar-header">
-                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                              </button>
-                                  <a class="navbar-brand" href="#">
-                                    <img src="images/bana.jpg" alt="Logo">
-                                  </a>
-
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class=  "sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                              
                             </div>
-
-                           
-
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                              <ul class="nav navbar-nav navbar-right" id="top-nav">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#sobre">Sobre</a></li>
-                               <!--<li><a href="#blog">Blog</a></li>-->
-                               <li><a href="#price">Registro</a></li>
-                               <li><a href="login.php">Login</a></li>
-                                
-                              </ul>
+                                <ul class="nav navbar-nav navbar-right" id="top-nav">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#sobre">Sobre</a></li>
+                                    <!--<li><a href="#blog">Blog</a></li>-->
+                                    <li><a href="#contact-us">Registro</a></li>
+                                    <li><a href="login.php">Login</a></li>
+                                </ul>
                             </div>
                           </div>
                         </nav>
@@ -72,16 +65,8 @@
         </div>
     </nav>
     
-    <!-- Slider -->
-    <section id="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
+   
+   
     
     <!--Sobre-->
     <section id="sobre">
@@ -89,10 +74,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <div align="center"
+                        <div>
                        
                         <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms" ><span>Quem Somos ?</span></h1>
-                       <FONT SIZE="5" </font><p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms"><br>A DoScience é uma empresa de pesquisa cientifica. Objetivo de levar conhecimento aos alunos.</p></br>
+                       <FONT SIZE="5"> </font><p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms"><br>A DoScience é uma empresa de pesquisa cientifica. Objetivo de levar conhecimento aos alunos.</p></br>
                         
                     </div>
                 </div>
@@ -103,79 +88,63 @@
     
     <!-- blog -->
     
-                        <section id="blog">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="block">
-                                            <h1 class="heading"><span>Últimas Notícias</span</h1>
-                                            <ul>
-                                                <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto1.jpg" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>Motivação vs Inspiração</h3>
-                                                       Estudo cientifico aponta diferenças entre motivação e inspiração</p>
-                                                    </div>
-                                                </li>
-                                                <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto2.png" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>Fóssil  Vespersaurus paranaensis</h3>
-                                                        Fóssil de 90 milhões de anos foi encontrado no Paraná.
+    <div class="row">
+			<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+				<div class="thumbnail">
+					<div>
+						<i class="fa fa-plane fa-4x" aria-hidden="true">
 
-                                                    </div>
-                                                </li>
-                                                
-                                                <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto3.jpg" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>A descoberta do DNA</h3>
-                                                        
-                                                    </div>
-                                                </li>
-                                                <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto4.jpg" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>Os benefícios da imunização</h3>
-                                                    </div>
-                                                </li>
-                                                <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto5.jpg" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>Derretimento das geleiras</h3>
+						</i>
+					</div>
 
-                                                    </div>
-                                                </li>
-                                                <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
-                                                    <div class="blog-img">
-                                                        <img src="images/foto6.jpg" alt="blog-img">
-                                                    </div>
-                                                    <div class="content-right">
-                                                        <h3>Novas múmias são encontradas em tumba no Egito</h3>
-                                                    </div>
-                                                </li>
+					<div class="caption">
+						<h3>Passagens aéreas</h3>
+						<p>Aqui você encontra as melhores ofertas e oportunidades de voar nas melhores companhias do mundo</p>
+						<p><a href="https://www.decolar.com/" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+					</div>
+					
+				</div>
+			</div>
 
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
+			<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+					<div class="thumbnail">
+						<div>
+							<i class="fa fa-bed fa-4x" aria-hidden="true">
+	
+							</i>
+						</div>
+	
+						<div class="caption">
+							<h3>Hotéis</h3>
+							<p>Os melhores hotéis, com os melhores preços para que sua viagem seja ainda mais especial e aconchegante</p>
+							<p><a href="https://www.booking.com/index.pt-br.html?aid=331424;sid=27e78124906f5a79d4bc8d7fea4f1961;keep_landing=1&sb_price_type=total&" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+						</div>
+						
+					</div>
+				</div>
 
+				<div class="col-xs col-sm-12 col-md-4 col-lg-4">
+						<div class="thumbnail">
+							<div>
+								<i class="fa fa-car fa-4x" aria-hidden="true">
+		
+								</i>
+							</div>
+		
+							<div class="caption">
+								<h3>Carros</h3>
+								<p>Aqui você encontra as melhores ofertas e oportunidades de voar nas melhores companhias do mundo</p>
+								<p><a href="https://www.localizahertz.com/others/en-us" target="blank" class="btn btn-success" role="button">Pesquisar</a></p>
+							</div>
+							
+						</div>
+					</div>
+			
+			
+
+		</div>
 
     <!--Contatos -->
-    <?php include('functions.php')?>
 
     <section id="contact-us">
         <div class="container">
@@ -202,7 +171,7 @@
                             </div>
 
                         </form>
-                        <a class="btn" name="register_btn" style="color: rgb(255, 255, 255)" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">Cadastrar</a>
+                        <a class="btn" type= "submit" name="register_btn" style="color: rgb(255, 255, 255)" data-wow-duration="500ms" data-wow-delay="1300ms" href="home.php" role="button">Cadastrar</a>
 <!-- <a class="btn btn-default wow bounceIn" style="color: rgb(255, 255, 255)" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">Registrar-se</a> -->
                     </div>
                 </div>
@@ -224,16 +193,12 @@
                         <img src="images/uff.png" alt="blog-img"  width="200" height="200">
                         <img src="images/ufrgs.png" alt="blog-img" width="200" height="200">
                         <img src="images/unirio.png" alt="blog-img" width="200" height="200">
-                        
-                   
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
 
-    
     <!-- footer  -->
     <section id="footer">
         <div class="container">
@@ -244,18 +209,17 @@
                         <div class="blog">
                             <ul>
                                 <li>
-                                  <h4><i class="fa fa-phone"></i>Telefone</h4>
-                                  <p>(55) 21 99874-3359</p>
-                                    
+                                    <h4><i class="fa fa-phone"></i>Telefone</h4>
+                                    <p>(55) 21 99874-3359</p>    
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-map-marker"></i>Endereço</h4>
-                                  <p>Rua Santa Luzia 735 sala 705, Cinelandia -RJ </p>
+                                    <h4><i class="fa fa-map-marker"></i>Endereço</h4>
+                                    <p>Rua Santa Luzia 735 sala 705, Cinelandia -RJ </p>
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-envelope"></i>E-mail</h4>
-                                  <p>contato@doscience.com</p>
-                                  </li>
+                                    <h4><i class="fa fa-envelope"></i>E-mail</h4>
+                                    <p>contato@doscience.com</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -266,17 +230,16 @@
                         <h3>Navegue</h3>
                         <div class="blog">
                             <ul>
-                               
                                 <li>
-                                    <h4><a href="#Blog">Home</a></h4>
+                                    <h4><a href="#">Home</a></h4>
                                     <p>Os melhores conteúdos sobre Hip-Hop.</p>
                                 </li>
                                 <li>
-                                    <h4><a href="#Blog">Blog</a></h4>
-                                    <p> As melhores música e lançamentos.</p>
+                                    <h4><a href="404.php">Blog</a></h4>
+                                    <p>As melhores música e lançamentos.</p>
                                 </li>
                                 <li>
-                                    <h4><a href="#Blog">Login</a></h4>
+                                    <h4><a href="login.php">Login</a></h4>
                                     <p>Notícias sempre atualizadas para você.</p>
                                 </li>
                             </ul>                
@@ -288,7 +251,6 @@
                     <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
                           <h3>Siga-nos</h3>
                         <div class="social-media-link">
-                          
                             <ul>
                                 <li><a target="_blank" href="https://twitter.com/bancaoficial"> <i class="fa fa-twitter"></i></a></li>
                                 <li><a target="_blank"  href="https://www.facebook.com/bancaclandestina"><i class="fa fa-facebook"></i></a></li>
@@ -301,9 +263,7 @@
             </div>
         </div>
     </section>
-    <!--
-    footer-bottom  start
-    ============================= -->
+    <!--============================= footer-bottom  start ============================= -->
     <footer id="footer-bottom">
         <div class="container">
             <div class="row">
